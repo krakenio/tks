@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+	<html >
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="IE=Edge">
+		<title>sample tks</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<!-- BOOTSTRAP COMMON STYLE -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<!-- CUSTOM STYLE -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+			
+			<style>
+
+			@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/roboto-regular.eot');
+    src: url('../fonts/roboto-regular.eot') format('embedded-opentype'),
+         url('../fonts/roboto-regular.woff') format('woff'),
+         url('../fonts/roboto-regular.ttf') format('truetype'),
+         url('../fonts/roboto-regular.svg#RobotoLight') format('svg')
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block
+}
+body {
+  line-height: 1
+}
+ol, ul {
+  list-style: none
+}
+blockquote, q {
+  quotes: none
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+html,body {
+  overflow-x:hidden
+}
+body {
+  margin:0px;
+  padding:0px;
+  font-family:LintelR,Arial,sans-serif,Helvetica;
+  color:#FFFFFF;
+  float:left;
+  width:100%
+}
+h1 {
+  margin:0px;
+  padding:0px
+}
+h2 {
+  margin:0px;
+  padding:0px
+}
+h3 {
+  margin:0px;
+  padding:0px
+}
+h4 {
+  margin:0px;
+  padding:0px
+}
+h5 {
+  margin:0px;
+  padding:0px
+}
+h6 {
+  margin:0px;
+  padding:0px
+}
+.no-padding
+{
+  padding: 0px
+}
+.no-margin
+{
+  margin: 0px
+}
+.wrapper
+{
+  width: 100%;
+  height: auto;
+  float: left
+}
+.main-container
+{
+  max-width: 2280px;
+  height: auto;
+  margin: 0 auto;
+  display: table;
+  width: 100%
+}
+.container
+{
+  max-width: 2280px;
+  width: 100%;
+  position: relative
+}
+p,ul,li,h1,h2,h3,h4,h5
+{
+  margin: 0px
+}
+a,a:hover,a:active,a:link,a:visited
+{
+  text-decoration: none;
+  color: #fff;
+  outline: none
+}
+/** HEADER SECTION STYLE START **/
+.head
+{
+  width: 100%;
+  height: auto;
+  float: left
+}
+.menu-section
+{
+  width: 100%;
+  height: auto;
+  float: left;
+  position: relative
+}
+.navbar-default
+{
+  height: auto;
+  float: left;
+  width: 100%;
+  max-width: 2280px;
+  margin: 0 auto;
+  background: #F8F9FD;
+ /* border-bottom: 1px solid #ECEFF3;*/
+  min-height: 40px
+}
+.navbar-brand.page-scroll.logo 
+{
+  font-size: 20px;
+  font-weight: initial;
+  height: auto;
+  margin: 0;
+  padding: 0px 0
+}
+.logo h1 {
+  font-size: 58px;
+  color: #C60C31;
+  line-height: 80px
+}
+.logo h1 span
+{
+  color: #43ebff
+}
+.logo img
+{
+  float: none;
+  margin: 8px 0px 0px 0px
+}
+.logo p
+{
+  color: #fff;
+  font-size: 14px;
+  line-height: 27px
+}
+.navbar-collapse
+{
+  float: left;
+  width: auto
+}
+.navbar-nav
+{
+  margin: 0px 0
+}
+.navbar-nav > li
+{
+  padding: 0px 15px
+}
+.navbar-default .navbar-nav > li > a {
+  color: #84878e;
+  font-family: "arial";
+  font-size: 21px;
+  height: 57px;
+  line-height: 53px;
+  padding: 0 20px;
+  width: auto
+}
+.active
+{
+  background: transparent
+}
+.navbar-default .navbar-nav > li:first-child > a
+{
+  padding: 0px 5px
+}
+.active-menu{
+  text-decoration: none;
+  background-color: transparent;
+  border-bottom: 3px solid #5DCBEE
+}
+.navbar-default .navbar-nav > li > a:hover
+{
+  color: #84878E;
+  text-decoration: none;
+  background-color: transparent;
+  border-bottom: 3px solid #5DCBEE
+}
+.navbar-default .navbar-nav > li > a:active
+{
+  color: #84878E
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+  border-bottom: 3px solid #5DCBEE
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+{
+  color: #84878E
+}
+.navbar-fixed-top, .navbar-fixed-bottom
+{
+  position: absolute;
+  z-index: 2147483647
+}
+.bottom-menu .navbar-fixed-top, .navbar-fixed-bottom
+{
+  position: relative
+}
+header{
+  background: #F8F9FD;
+  float: left;
+  height: auto;
+  width: 100%;
+  z-index: 100
+}
+.maincontainer {
+  width:100%;
+  height:auto;
+  float:left
+}
+.menulogo {
+  width:100%;
+  height:auto;
+  float:left;
+  padding-top:0px;
+  text-align:center;
+  background-color:#F8F9FD
+}
+.closeicon {
+  border-left: 1px solid #E6E7EC;
+  float: right;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  padding: 15px
+}
+.closeicon > a 
+{
+  float: left;
+  height: auto;
+  width: auto
+}
+.closeicon > a img 
+{
+  float: left;
+  height: auto;
+  width: auto
+}
+.dot3 {
+  float: left;
+  font-size: 37px;
+  height: auto;
+  left: -48px;
+  position: absolute;
+  top: 0;
+  color:#A6A9B2
+}
+.page-text-img-cnt{
+  width:100%;
+  height:58px;
+  float:left
+}
+/************************** side menu ******************************/
+#content {
+  float: left;
+  left: 11px;
+  position: absolute;
+  top: 360px;
+  width: 50px !important;
+  z-index: 5
+}
+#menu {
+  display:none
+}
+.first img {
+  height: 83px;
+  position: fixed;
+  top:50%;
+  margin-top: -41px;
+  width: auto;
+  left:0
+}
+ul.topmenu {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%
+}
+ul.topmenu li {
+  float: left;
+  height: auto;
+  list-style: outside none none;
+  width: 100%
+}
+ul.topmenu li a {
+  font-size:18px;
+  color:#000;
+  text-decoration:none
+}
+ul.topmenu li a:hover {
+  font-size:18px;
+  color:#93aaf1;
+  text-decoration:none
+}
+
+.sotoremainholder {
+  float:left;
+  padding-left:20px;
+  margin-top:20px
+}
+
+#pageslide {
+  display:none;
+  position:absolute;
+  top:0;
+  height:auto;
+  -webkit-overflow-scrolling:touch;
+  width:475px;
+  color:#FFF;
+  /*border:1px solid #edeef3*/
+}
+.left-icons {
+  border-bottom: 1px solid #edeef3;
+  border-right: 1px solid #edeef3;
+  float: left;
+  height: auto;
+  width: 100%;
+}
+.left-icons ul{ 
+  width: auto;
+  height: auto;
+  float: left
+}
+.left-icons ul li {
+  float: left;
+  height: auto;
+  padding: 0 23px;
+  width: auto
+}
+.left-icons ul li a {
+  float: left;
+  height: 56px;
+  padding: 12px 5px;
+  width: auto
+}
+.left-icons ul li a:hover{
+  float: left;
+  height: 56px;
+  padding: 12px 5px;
+  width: auto;
+  border-bottom:3px solid #5DCBEE
+}
+.left-icons ul li a .active{
+  color: #000;
+  background-color: transparent;
+  border-bottom: 3px solid #5DCBEE
+}
+.left-icons ul li a:active{
+  color: #000;
+  background-color: transparent;
+  border-bottom: 3px solid #5DCBEE
+}
+.left-icons ul li img{
+  width:30px;
+  height:30px;
+  float: left
+}
+
+.first-section{
+  width: 100%;
+  height: auto;
+  float: left
+}
+.sp-img{
+  width: 20%;
+  height: auto;
+  float: left;
+  min-height:170px
+}
+.sp-img img {
+  float: left;
+  height: 40px;
+  margin: 20px;
+  width: 40px
+}
+.sp-txt {
+  float: left;
+  height: auto;
+  padding: 23px 0 15px;
+  width: 80%
+}
+.sp-txt h1 {
+  color: #555c66;
+  font-size: 20px;
+  font-weight: 600
+}
+.sp-txt p {
+  color: #78808b;
+  font-size: 17px;
+  line-height: 27px;
+  width: 100%
+}
+.crm-info {
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 12px
+}
+.sp-txt p img.sp-img-phgoto {
+  float: left;
+  height: 30px;
+  margin: 10px 10px 10px 0;
+  width: 30px
+}
+.border-bot {
+  border-top: medium dotted #AEB1BA;
+  display: table;
+  float: none;
+  height: 0;
+  margin: 0 auto;
+  width: 80%
+}
+.second-section {
+  float: left;
+  height: auto;
+  width: 100%
+}
+.assignd-to{
+  width: 50%;
+  height: auto;
+  float: left
+}
+.assign-to3 {
+  float: left;
+  height: auto;
+  padding-bottom: 20px;
+  width: 100%
+}
+.ass-to-img {
+  float: left;
+  height: auto;
+  width: auto
+}
+.sec-txt1{
+ width:75%;
+ height:auto;
+ float:left
+}
+.sec-img1{
+  width:25%;
+  height:auto;
+  float:left
+}
+.sec-img1-cal{
+   width:16%;
+  height:auto;
+  float:left
+}
+.sec-img1 img {
+  float: left;
+  height: auto;
+  margin: 20px;
+  width: auto
+}
+.sec-txt1 h1 {
+  color: #555c66;
+  float: left;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 20px 0 0;
+  width: 100%
+}
+.sec-txt1 p {
+  color: #78808b;
+  float: left;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 34px;
+  width: auto
+}
+.ass-to-img-mid img {
+  float: left;
+  height: auto;
+  margin: 30px 20px;
+  width: auto
+}
+.third-section ul{
+  width: 100%;
+  height: auto;
+  float: left
+}
+.third-section ul li:first-child{
+  padding: 0
+}
+.third-section ul li:nth-child(2){
+  padding: 26px 35px 26px 0
+}
+.third-section ul li img {
+  margin: 20px
+}
+.third-section ul li {
+  color: #78808b;
+  float: left;
+  font-weight: 600;
+  height: auto;
+  padding: 26px 35px;
+  width: auto
+}
+.fourth-section {
+  float: left;
+  height: auto;
+  width: 100%;
+  padding-top: 20px
+}
+
+.fourth-section ul{
+  width:100%;
+  height: auto;
+  float: left
+}
+.fourth-section ul li{
+  width: 100%;
+  height: auto
+}
+.fourth-section ul li img {
+  float: left;
+  height: auto;
+  padding: 10px 10px 10px 20px;
+  width: auto
+}
+.fourth-section ul li span {
+  color: #9ea4ac;
+  float: left;
+  font-weight: 600;
+  height: auto;
+  padding: 20px 10px 0 0;
+  width: auto;
+  font-size: 21px
+}
+.close-button{
+  width: 100%;
+  height: auto;
+  float: left
+}
+.close-button button {
+  background: #ffffff none repeat scroll 0 0;
+  border: 2px solid #9ea4ac;
+  border-radius: 5px;
+  color: #9ea4ac;
+  display: table;
+  float: none;
+  font-weight: 600;
+  height: 50px;
+  margin: 240px auto 35px;
+  width: 200px
+}
+.right-side-content{
+  width:100%;
+  height:auto;
+  float:left
+}
+.main-content {
+  border-left: 1px solid #edeef3;
+  float: left;
+  height: auto;
+  width: 100%;
+}
+.inner-text {
+  border-bottom: 1px solid #edeef3;
+  border-left: 3px solid #fff;
+  float: left;
+  height: auto;
+  width: 100%
+}
+.inner-text:hover{
+  border-left:3px solid #9BC863
+}
+.img-sp-right {
+  float: left;
+  height: auto;
+  width: 9%
+}
+.txt-sp-right{
+  width:91%;
+  height:auto;
+  float:left
+}
+.img-sp-right img {
+  height: auto;
+  margin: 30px;
+  width: 60px
+}
+.txt-sp-right h1 {
+  color: #535d66;
+  float: left;
+  font-size: 24px;
+  font-weight: 500;
+  height: auto;
+  padding-top: 38px;
+  width: 100%
+}
+.txt-sp-right p {
+  color: #78808b;
+  float: left;
+  font-size: 20px;
+  height: auto;
+  line-height: 33px;
+  width: 97%;
+  padding-bottom: 20px
+}
+.spn-no-right{
+   color:#5A9DE4
+}
+.txt-sp-time {
+  color: #78808b;
+  float: left;
+  height: auto;
+  padding: 10px 0;
+  width: 100%
+}
+.rply-cmmnt {
+  float: left;
+  height: auto;
+  width: 100%
+}
+.rply-cmmnt ul{
+  width:auto;
+  height:auto;
+  float:right
+}
+.rply-cmmnt ul li {
+  color: #1ab5e5;
+  float: left;
+  height: auto;
+  padding: 10px 10px;
+  width: auto
+}
+.rply-cmmnt ul li img {
+  float: left;
+  width: 30px
+}
+.rply-cmtt {
+  float: left;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 4px 14px
+}
+
+@media(max-width:1200px) {
+.navbar-default .navbar-nav > li > a {
+  font-size: 16px
+}
+}
+@media(max-width:1024px) {
+  .navbar-default .navbar-nav > li > a {
+  font-size: 16px;
+  padding: 0 15px
+}
+.txt-sp-right {
+  width: 86%
+}
+.img-sp-right {
+  width: 13%
+}
+}
+@media(max-width:999px) {
+  .container
+  {
+    max-width: 755px
+  }
+.navbar-default .navbar-nav > li > a {
+  font-size:14px;
+  padding:0
+}
+.img-sp-right img {
+  margin: 30px 13px;
+  width: 60px
+}
+.txt-sp-time {
+  font-size: 13px
+}
+}
+@media(max-width:767px) {
+  .container
+  {
+    max-width: 630px
+  }
+  .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse
+  {
+    margin-left: 0px;
+    margin-right: 0px
+  }
+  .navbar-collapse
+  {
+    width: 100%
+  }
+  .navbar-default .navbar-nav > li > a
+  {
+    text-align: center
+  }
+  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse
+  {
+    max-height: inherit
+  }
+  .navbar-collapse
+  {
+    padding: 0px
+  }
+  .navbar-default .navbar-nav > li > a
+  {
+    line-height: 50px
+  }
+  .menu-section .container
+  {
+    width: 100%;
+    max-width: 100%
+  }
+  .navbar-header.page-scroll
+  {
+    max-width: 744px;
+    margin: 0 auto;
+    display: table;
+    width: 100%
+  }
+  .navbar-collapse.navbar-ex1-collapse
+  {
+    background: #fff
+  }
+  .nav > li
+  {
+    border-bottom: 1px solid #e7e7e7
+  }
+  .nav > li:last-child
+  {
+    border-bottom: 0px solid #e7e7e7
+  }
+  .navbar-default .navbar-nav > li > a
+  {
+    color: #000
+  }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+  {
+    color: #000
+  }
+  .closeicon {
+    border-right: 1px solid #e6e7ec;
+    left: 0;
+    padding: 11px;
+    position: absolute;
+    top: 0;
+    width: 50px
+}
+.dot3 {
+  left: 51px;
+  top: -5px
+}
+/*#pageslide {
+  width: 78%
+}*/
+.left-icons ul li a {
+  height: 49px;
+  padding: 9px 5px
+}
+.left-icons ul li a:hover {
+  height: 49px;
+  padding: 9px 5px
+}
+.txt-sp-right h1 {
+  font-size: 21px
+}
+.rply-cmmnt ul li img {
+  width: 40px
+}
+.rply-cmtt {
+  font-size: 19px
+}
+.img-sp-right img {
+  width: 47px
+}
+.txt-sp-right p {
+  font-size: 16px;
+  line-height: 19px
+}
+.page-text-img-cnt {
+  height: 51px
+}
+}
+@media(max-width:639px) {
+  .container
+  {
+    max-width: 570px
+  }
+  .navbar-header.page-scroll
+  {
+    max-width: 570px
+  }
+  .teg .innerartical h4 
+  {
+    min-height: 53px
+  }
+  .logo img 
+  {
+    height: 30px;
+    margin: 10px 0
+  }
+  .navbar 
+  {
+    min-height: 50px
+  }
+  .navbar-toggle 
+  {
+    margin-top: 8px
+  }
+
+}
+@media(max-width:579px) {
+  .container
+  {
+    max-width: 470px
+  }
+  .navbar-header.page-scroll
+  {
+    max-width: 470px
+  }
+ .left-icons ul li {
+  padding: 0 25px
+}
+#pageslide {
+  width: 470px;
+}
+.sp-txt {
+  width: 80%
+}
+.sp-img {
+  width: 20%
+}
+.sp-txt p {
+  font-size: 22px;
+  line-height: 32px
+}
+.sp-txt h1 {
+  font-size: 30px
+}
+.sec-img1 {
+  width: 30%
+}
+.sec-img1-cal {
+  width: 19%
+}
+.sec-txt1 {
+  width: 68%
+}
+.sec-img1 img {
+  margin: 20px 30px
+}
+.ass-to-img-mid img {
+  margin: 30px 20px
+}
+.sp-img img {
+  margin: 20px 30px
+}
+.third-section ul li img {
+  margin: 20px 30px
+}
+.third-section ul li:nth-child(2) {
+  padding: 26px 30px 26px 0
+}
+.third-section ul li {
+  padding: 26px 30px
+}
+.fourth-section ul li img {
+  padding: 10px 20px
+}
+.img-sp-right img {
+  margin: 38px 5px;
+  width: 44px
+}
+.txt-sp-right h1 {
+  font-size: 16px
+}
+.rply-cmtt {
+  font-size: 15px
+}
+.rply-cmmnt ul li img {
+  width: 26px
+}
+}
+@media(max-width:479px) {
+  .container
+  {
+    max-width: 363px
+  }
+  .navbar-header.page-scroll
+  {
+    max-width: 310px
+  }
+    .left-icons ul li {
+  padding: 0 10px
+}
+.sp-txt {
+  width: 74%
+}
+.sp-txt p {
+  font-size: 18px;
+  line-height: 28px
+}
+.sp-img {
+  width: 21%
+}
+.sec-txt1 p {
+  font-size: 14px
+}
+.sec-txt1 h1 {
+  font-size: 18px
+}
+.sec-img1 img {
+  margin: 20px 10px
+}
+.sp-img img {
+  margin: 20px 10px
+}
+.third-section ul li img {
+  margin: 20px 10px
+}
+.third-section ul li:nth-child(2) {
+  padding: 26px 5px 26px 0
+}
+.third-section ul li {
+  padding: 26px 5px
+}
+.fourth-section ul li img {
+  padding: 10px 10px 10px 10px
+}
+.ass-to-img-mid img {
+  margin: 27px 20px 0 10px
+} 
+.img-sp-right {
+  width: 18%
+}
+.txt-sp-right {
+  width: 80%
+}
+.txt-sp-right h1 {
+  font-size: 15px;
+  line-height:20px
+}
+.txt-sp-right p {
+  font-size: 13px;
+  line-height: 16px
+}
+.rply-cmmnt ul li {
+  padding: 2px
+}
+#pageslide {
+  width: 320px;
+}
+}
+
+			</style>
+
+	</head>
+	<body id="page-top" data-spy="scroll" data-offset="80" data-target=".navbar-fixed-top">
+		<div class="maincontainer" style="margin-left:0;">
+		<header>
+			<div id="content">
+			<a href="#menu" class="first"><img src="images/slide-arrow.png"></a>
+			<div id="menu">
+				<div class="menulogo">
+				
+					<div class="left-icons">
+							<ul>
+								<li><a class="active-menu" href=""><img src="images/1.png"></a></li>
+								<li><a href=""><img src="images/2.png"></a></li>
+								<li><a href=""><img src="images/3.png"></a></li>
+								<li><a href=""><img src="images/4.png"></a></li>
+								<li><a href=""><img src="images/5.png"></a></li>
+							</ul>
+						</div>
+				</div>
+				<!-- img_logo.png -->
+				<ul class="topmenu">
+						<li>
+							<div class="first-section">
+								<div class="sp-img">
+									<img src="images/r1.png">
+								</div>
+								<div class="sp-txt">
+									<h1>Dummy tetx</h1>
+									<p>Dummy tetx ltd<br>
+										Dummy tetx@gmail.com<br>
+										+91 9945685125<br>
+										<img class="sp-img-phgoto" src="images/phgoto.png"> 
+										<span class="crm-info">Dummy tetx <img src="images/arr.png"></span>
+									</p>
+								</div>
+							</div>
+							<div class="border-bot">
+							</div>
+						</li>
+						<li>
+							<div class="second-section">
+								<div class="assignd-to">
+									<div class="ass-to-img">
+										<div class="sec-img1">
+											<img src="images/rr.png">
+										</div>
+										<div class="sec-txt1">
+											<h1>Assigned To</h1>
+											<p>Dummy tetx</p>
+										</div>
+									</div>
+								</div>
+								<div class="assignd-to">
+									<div class="ass-to-img">
+										<div class="sec-img1 ass-to-img-mid">
+											<img src="images/34.png">
+										</div>
+										<div class="sec-txt1">
+											<h1>Dummy tetx</h1>
+											<p>Dummy tetx</p>							
+										</div>
+									</div>
+								</div>
+								<div class="assignd-to assign-to3">
+									<div class="ass-to-img">
+										<div class="sec-img1 sec-img1-cal">
+											<img src="images/calender.png">
+										</div>
+										<div class="sec-txt1">
+											<h1>Dummy tetx</h1>
+											<p>08 Jun 2015 08:56PM</p>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="border-bot">
+							</div>
+						</li>
+						<li>
+							<div class="third-section">
+								<ul>
+									<li><img src="images/tag.png"></li>
+									<li>#CallBack</li>
+									<li>#Feature</li>
+									<li>#Payments</li>
+								</ul>
+							</div>
+							<div class="border-bot">
+							</div>
+						</li>
+						<li>
+							<div class="fourth-section">
+								<ul>
+									<li><img src="images/arrow-32.png"> <span>Dummy tetx Properties</span></li>
+									<li><img src="images/arrow-32.png"> <span>Dummy tetx</span></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<div class="close-button">
+								<button>Dummy tetx TICKET</button>
+							</div>
+						</li>
+					</ul>	
+					</div>
+				</div>
+			</header>
+			<div class="right-side-content">
+				<div class="wrapper">
+					<div class="main-container">
+						<!-- HEADER START -->
+						<div class="head">	
+							<div class="menu-section">
+								<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+									<div class="container no-padding">
+										<div class="navbar-header page-scroll">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+											<!--a class="navbar-brand page-scroll logo" href="#page-top">
+												<img src="images/logo.png">
+												<p>Confident Care Starts with the Complete Picture.</p>
+											</a-->
+										</div>
+										<div class="collapse navbar-collapse navbar-ex1-collapse">
+											<ul class="nav navbar-nav">
+												<li class="active">
+													<a href="#">Conversation</a>
+												</li>
+												<li>
+													<a  href="#">History</a>
+												</li>
+												<li>
+													<a  href="#">Approval</a>
+												</li>
+												<li>
+													<a  href="#">Resolution</a>
+												</li>
+												<li>
+													<a  href="#">Task</a>
+												</li>
+												<li>
+													<a  href="#">Time Entry</a>
+												</li>
+												<li>
+													<a href="#">Attachment</a>
+												</li>
+											</ul>
+										</div>
+										<div class="closeicon">
+										<span class="dot3">
+											...
+										</span>
+											<a href="#"><img src="images/close.png"></a>
+										</div>
+									</div>
+								</nav>
+							</div>
+						</div><!-- HEADER END -->
+						<div class="page-text-img-cnt">
+						</div>
+						<div class="main-content">
+							<div class="inner-text">
+								<div class="img-sp-right">
+									<img src="images/r2.png">
+								</div>
+								<div class="txt-sp-right">
+									<h1><span class="spn-no-right">#674345</span> Support Rep conformation email not received</h1>
+									<span class="txt-sp-time">2:39 PM</span>
+									<div class="rply-cmmnt">
+										<ul>
+											<li><img src="images/arrow.png"> <span class="rply-cmtt">Reply All</span></li>
+											<li><img src="images/location.png"> <span class="rply-cmtt">Comment</span></li>
+										</ul>
+									</div>
+									<!--p>Check the address for typing errors such as ww.example.com instead of www.example.com If you are unable to load any pages, check your computer's network connection.If your computer or network is protected by a firewall or proxy, make sure that Firefox is permitted to access the Web. Check the address for typing errors such as ww.example.com instead of www.example.com If you are unable to load any pages, check your computer's network connection.If your computer or network is protected by a firewall or proxy, make sure that Firefox is permitted to access the Web. Check the address for typing errors such as ww.example.com instead of www.example.com If you are unable to load any pages, check your computer's network connection.If your computer or network is protected by a firewall or proxy, make sure that Firefox is permitted to access the Web.</p-->
+								</div>
+							</div>
+							<div class="inner-text">
+								<div class="img-sp-right">
+									<img src="images/r1.png">
+								</div>
+								<div class="txt-sp-right">
+									<h1>Support Rep conformation email not received</h1>
+									<span class="txt-sp-time">2:39 PM (1 hour ago)</span>
+									<!--div class="rply-cmmnt">
+										<ul>
+											<li><img src="images/arrow.png"> <span class="rply-cmtt">Reply All</span></li>
+											<li><img src="images/location.png"> <span class="rply-cmtt">Comment</span></li>
+										</ul>
+									</div-->
+									<p>Check the address for typing errors such as ww.example.com instead of www.example.com If you are unable to load any pages, check your computer's network connection.If your computer or network is protected by a firewall or proxy, make sure that Firefox is permitted to access the Web. Check the address for typing errors such as ww.example.com instead of www.example.com If you are unable to load any pages, check your computer's network connection.If your computer or network is protected by a firewall or proxy, make sure that Firefox is permitted to access the Web. Check the address for typing errors such as ww.example.com instead of www.example.com If you are unable to load any pages, check your computer's network connection.If your computer or network is protected by a firewall or proxy, make sure that Firefox is permitted to access the Web.</p>
+								</div>
+							</div>
+							<div class="inner-text">
+								<div class="img-sp-right">
+									<img src="images/phgoto.png">
+								</div>
+								<div class="txt-sp-right">
+									<h1>Amazon Exclusive offers - upto 70% off</h1>
+									<span class="txt-sp-time">2:39 PM (1 hour ago)</span>
+									<!--div class="rply-cmmnt">
+										<ul>
+											<li><img src="images/arrow.png"> <span class="rply-cmtt">Reply All</span></li>
+											<li><img src="images/location.png"> <span class="rply-cmtt">Comment</span></li>
+										</ul>
+									</div-->
+									<p>Check the address for typing errors such as ww.example.com instead of www.example.com If you are unable to load any pages, check your computer's network connection.If your computer or network is protected by a firewall or proxy, make sure that Firefox is permitted to access the Web.</p>
+								</div>
+							</div>
+							<div class="inner-text">
+								<div class="img-sp-right">
+									<img src="images/phgoto.png">
+								</div>
+								<div class="txt-sp-right">
+									<h1>Support Rep conformation email not received</h1>
+									<span class="txt-sp-time">2:39 PM (1 hour ago)</span>
+									<!--div class="rply-cmmnt">
+										<ul>
+											<li><img src="images/arrow.png"> <span class="rply-cmtt">Reply All</span></li>
+											<li><img src="images/location.png"> <span class="rply-cmtt">Comment</span></li>
+										</ul>
+									</div-->
+									<p>Check the address for typing errors such as ww.example.com instead of www.example.com If you are unable to load any pages, check your computer's network connection.If your computer or network is protected by a firewall or proxy, make sure that Firefox is permitted to access the Web.</p>
+								</div>
+							</div>
+							<div class="inner-text">
+								<div class="img-sp-right">
+									<img src="images/phgoto.png">
+								</div>
+								<div class="txt-sp-right">
+									<h1>Free Catagory Request</h1>
+									<span class="txt-sp-time">2:39 PM (1 hour ago)</span>
+									<!--div class="rply-cmmnt">
+										<ul>
+											<li><img src="images/arrow.png"> <span class="rply-cmtt">Reply All</span></li>
+											<li><img src="images/location.png"> <span class="rply-cmtt">Comment</span></li>
+										</ul>
+									</div-->
+									<p>Check the address for typing errors such as ww.example.com instead of www.example.com If you are unable to load any pages, check your computer's network connection.If your computer or network is protected by a firewall or proxy, make sure that Firefox is permitted to access the Web. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div>
+		<!-- JQUERY LIBRARY SCRIPT -->
+		<script src="js/jquery-1.11.0.js"></script>
+		<!-- BOOTSTRAP LIBRARY SCRIPT -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- SCROLLING SCRIPT -->
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/jquery.pageslide.min.js"></script>
+		
+		<!-- CUSTOM SCRIPT -->
+
+		<script>
+			$(document).ready(function() {
+
+				 $('.first').on('click',function(e){
+		            $('#pageslide').show();
+		            return false;
+				 });
+
+		      }); 
+		       $(".first").pageslide();
+		    </script>
+
+		    <script>
+		    /*
+ * jQuery pageSlide
+ * Version 2.0
+ * http://srobbin.com/jquery-pageslide/
+ *
+ * jQuery Javascript plugin which slides a webpage over to reveal an additional interaction pane.
+ *
+ * Copyright (c) 2011 Scott Robbin (srobbin.com)
+ * Dual licensed under the MIT and GPL licenses.
+*/
+;(function(b){function j(e,a){if(0===e.indexOf("#"))b(e).clone(!0).appendTo(c.empty()).show();else{if(a){var d=b("<iframe />").attr({src:e,frameborder:0,hspace:0}).css({width:"100%",height:"100%"});c.html(d)}else c.load(e);c.data("localEl",!1)}}function k(b,a){var d=c.outerWidth(!0),f={},g={};if(!c.is(":visible")&&!h){h=!0;switch(b){case "left":c.css({left:"auto",right:"-"+d+"px"});f["margin-left"]="-="+d;g.right="+="+d;break;default:c.css({left:"-"+d+"px",right:"auto"}),f["margin-left"]="+="+d,g.left="+="+d}l.animate(f,a);c.show().animate(g,a,function(){h=!1})}}var l=b(".maincontainer"),c=b("#pageslide"),h=!1,m;0==c.length&&(c=b("<div />").attr("id","pageslide").css("display","none").appendTo(b(".maincontainer ")));b.fn.pageslide=function(e){this.click(function(a){var d=b(this),f=b.extend({href:d.attr("href")},e);a.preventDefault();a.stopPropagation();c.is(":visible")&&d[0]==m?b.pageslide.close():(b.pageslide(f),m=d[0])})};b.fn.pageslide.defaults={speed:300,direction:"right",modal:!1,iframe:!0,href:null};b.pageslide=function(e){var a=b.extend({},b.fn.pageslide.defaults,e);c.is(":visible")&&c.data("direction")!=a.direction?b.pageslide.close(function(){j(a.href,a.iframe);k(a.direction,a.speed)}):(j(a.href,a.iframe),c.is(":hidden")&&k(a.direction,a.speed));c.data(a)};b.pageslide.close=function(c){var a=b("#pageslide"),d=a.outerWidth(!0),f=a.data("speed"),g={},i={};if(!a.is(":hidden")&&!h){h=!0;switch(a.data("direction")){case "left":g["margin-left"]="+="+d;i.right="-="+d;break;default:g["margin-left"]="-="+d,i.left="-="+d}a.animate(i,f);l.animate(g,f,function(){a.hide();h=!1;"undefined"!=typeof c&&c()})}};c.click(function(b){b.stopPropagation()});b(document).bind("click keyup",function(e){"keyup"==e.type&&27!=e.keyCode||c.is(":visible")&&!c.data("modal")&&b.pageslide.close()})})(jQuery);
+		    </script>
+		</body>
+		</html>
